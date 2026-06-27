@@ -1,0 +1,8 @@
+{
+	"Id": "tosti_tweaks",
+	"Version": "0.0.1",
+	"DisplayName": "tosti_tweaks",
+	"Author": "Tostiman",
+	"EntryMethod": "tosti_tweaks.Main.Load",
+	"AssemblyName": "tosti_tweaks.dll"
+}

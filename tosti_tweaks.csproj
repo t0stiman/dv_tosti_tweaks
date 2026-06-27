@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<AssemblyName>tosti_tweaks</AssemblyName>
+		<TargetFramework>net48</TargetFramework>
+		<LangVersion>10</LangVersion>
+		<WarningsAsErrors>CS8600;CS8602;CS8603</WarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Misc -->
+		<Reference Include="0Harmony" />
+		<Reference Include="UnityModManager" />
+
+		<!-- Derail Valley -->
+		<Reference Include="Assembly-CSharp" />
+		<Reference Include="DV.CabControls.Spec" />
+		<Reference Include="DV.RailTrack" />
+
+		<!-- Unity -->
+
+
+		<!-- UnityEngine -->
+		<Reference Include="UnityEngine" />
+		<Reference Include="UnityEngine.CoreModule" />
+		<Reference Include="UnityEngine.PhysicsModule" />
+		<Reference Include="UnityEngine.IMGUIModule" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Krafs.Publicizer" Version="2.2.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Publicize Include="Assembly-CSharp" IncludeCompilerGeneratedMembers="false" />
+		<Publicize Include="DV.Interaction" IncludeCompilerGeneratedMembers="false" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="src\Extensions\" />
+	</ItemGroup>
+</Project>
